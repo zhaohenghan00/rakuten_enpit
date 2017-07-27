@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.2.5
+
+#- jruby-19mode
+#- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: ejKPT6nOYdeXvjUA6diYMNPoGkdUFxomjz0D90s+8UxsxkzfFyexyeWa1g6zhUvAc9+dh0h2JerinNDs0Nt6UxJRHgXuGTT9FlFPWj/WEUAx23sBAMEuM9JT6GA7HoSLHnO2xwUYknQ3QP4ZG8hPzksPfP+9pdzR7GCKsOuAFX29l3zMNsxoiXsK1RHi9ww3vY5JYww4tGnrWh+SiZN0lCXuh0cgY7jSTeSs3lVOVy1p+s/zed4rGCF4Sb+OJVH0T623LS1GQsCRGFDMWjhMxmP54Cs35HhnDRT2EPQQZ3CBa/GJN2NJCLGaw+exPMJ6sBeER25Hao/TqS/TlNHf9xm2/EzEoAWhwWBLMfsxmwWbfRIk+j7keKIpZl5mwTeaWR+v1jGiTgpAUkwAgyBJM1atiEU+XfftGyz9xXcNjjgvzu9a0znvcyAMNxpa1Q0Avf2Dc0jI93g+cNkH1Rdeu6hUysvTgu7ZJ9C+4RL3z+NnLhpDlSPx5pIXuO0ML8Wb+QhIr0y3RuSTiAbHcBwKXF7fK4pFmg9chuyU2/miJHg8Jn8juFgd/gH6fS6IRDv9ctYuBNVkSwRGLFghLACdb95VTMGFxOxLDvuuFGy5cPNFYt8pS+WjhKs8gZwZC5JdlX1FOR72Y25rWJfLV7Vk7JT9lcyYt+xHqQT64xuvSqc=
+  app: fast-shelf-93609
+  on:
+    repo: gworks/rakuten_enpit
