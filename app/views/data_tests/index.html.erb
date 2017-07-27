@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Data Tests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field1</th>
+      <th>Field2</th>
+      <th>Field3</th>
+      <th>Field4</th>
+      <th>Field5</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @data_tests.each do |data_test| %>
+      <tr>
+        <td><%= data_test.field1 %></td>
+        <td><%= data_test.field2 %></td>
+        <td><%= data_test.field3 %></td>
+        <td><%= data_test.field4 %></td>
+        <td><%= data_test.field5 %></td>
+        <td><%= link_to 'Show', data_test %></td>
+        <td><%= link_to 'Edit', edit_data_test_path(data_test) %></td>
+        <td><%= link_to 'Destroy', data_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Data test', new_data_test_path %>
+
+<h2><%= link_to 'Back to top', root_path %></h2>
+
