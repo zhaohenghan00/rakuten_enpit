@@ -7,3 +7,5 @@
 [https://fast-shelf-93609.herokuapp.com/](https://fast-shelf-93609.herokuapp.com/)
 
 https://git.heroku.com/fast-shelf-93609.git
+
+stage_10で作業開始
