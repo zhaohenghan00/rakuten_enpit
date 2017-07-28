@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rakutenclips</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Clipdate</th>
+      <th>Itemid</th>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rakutenclips.each do |rakutenclip| %>
+      <tr>
+        <td><%= rakutenclip.clipdate %></td>
+        <td><%= rakutenclip.itemid %></td>
+        <td><%= rakutenclip.comment %></td>
+        <td><%= link_to 'Show', rakutenclip %></td>
+        <td><%= link_to 'Edit', edit_rakutenclip_path(rakutenclip) %></td>
+        <td><%= link_to 'Destroy', rakutenclip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rakutenclip', new_rakutenclip_path %>

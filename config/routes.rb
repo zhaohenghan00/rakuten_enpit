@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :rakutenclips
   resources :data_tests
   resources :data_tests
   resources :data_tests
