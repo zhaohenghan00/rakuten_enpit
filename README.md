@@ -11,9 +11,9 @@ https://git.heroku.com/fast-shelf-93609.git
 ## 参考情報
 <lo>
 <li>
-[Tailsのなんちゃってイメージ][https://qiita-image-store.s3.amazonaws.com/0/27486/d6f423f6-17cb-3171-d6e6-36dc9756810d.png]
+<a href="https://qiita-image-store.s3.amazonaws.com/0/27486/d6f423f6-17cb-3171-d6e6-36dc9756810d.png">Railsのなんちゃってイメージ></a>
 </li>
 <li>
-[http://railsdoc.com/][http://railsdoc.com/]
+<a href="http://railsdoc.com/>Ruby on Railsドキュメント (v4.2.1)</a>
 <li>
 </lo>
