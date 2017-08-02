@@ -8,4 +8,12 @@
 
 https://git.heroku.com/fast-shelf-93609.git
 
-stage_10で作業開始
+## 参考情報
+<lo>
+<li>
+[Tailsのなんちゃってイメージ][https://qiita-image-store.s3.amazonaws.com/0/27486/d6f423f6-17cb-3171-d6e6-36dc9756810d.png]
+</li>
+<li>
+[http://railsdoc.com/][http://railsdoc.com/]
+<li>
+</lo>
