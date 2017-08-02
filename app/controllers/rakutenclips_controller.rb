@@ -21,6 +21,11 @@ class RakutenclipsController < ApplicationController
   def edit
   end
 
+  # GET /rakutenclips/list
+  def list
+  end
+
+
   # POST /rakutenclips
   # POST /rakutenclips.json
   def create

@@ -31,3 +31,9 @@
 <%= link_to 'New Rakutenclip', new_rakutenclip_path %>
 
 <h2><%= link_to 'Back to top', root_path %></h2>
+
+<%= form_tag("/list", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
