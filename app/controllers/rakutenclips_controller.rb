@@ -21,6 +21,16 @@ class RakutenclipsController < ApplicationController
   def edit
   end
 
+  # GET /rakutenclips/list
+  def list
+    if request.post? then
+    @value = params['searchVaule']
+    end
+
+
+  end
+
+
   # POST /rakutenclips
   # POST /rakutenclips.json
   def create
