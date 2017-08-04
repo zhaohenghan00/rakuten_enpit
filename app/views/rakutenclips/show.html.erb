@@ -1,30 +1,35 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Clipdate:</strong>
+  <strong>クリップした日:</strong>
   <%= @rakutenclip.clipdate.strftime('%Y/%m/%d %H:%M:%S') %>
 </p>
 
 <p>
-  <strong>picture</strong>
-  <%= image_tag 'noimage.gif' %>
+  <strong>商品名:</strong>
+  <% search_items('item_code') %>
+  <%= @item_name %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  これはダミーの説明です。<br>
-あらゆる場面で決定的なシーンを逃さない動体撮影性能を実現。<br>
-「Xシリーズ」初の4K動画撮影に対応。<br>
-ファインダーを中心としたデザインと、直感的で実用性の高い操作性を実現。
+  <strong>商品画像</strong>
+  <% search_items('item_code') %>
+  <%= image_tag @picture , :size => '300x200' %>
 </p>
 
 <p>
-  <strong>Itemid:</strong>
+  <strong>商品説明:</strong>
+  <% search_items('item_code') %>
+  <%= @description %>
+</p>
+
+<p>
+  <strong>商品コード:</strong>
   <%= @rakutenclip.itemid %>
 </p>
 
 <p>
-  <strong>Comment:</strong>
+  <strong>コメント:</strong>
   <%= @rakutenclip.comment %>
 </p>
 
