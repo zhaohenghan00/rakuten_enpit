@@ -16,3 +16,5 @@ Railsのなんちゃってイメージ
 <a href="http://railsdoc.com/">Ruby on Railsドキュメント (v4.2.1)</a>
 <li>
 </lo>
+
+
