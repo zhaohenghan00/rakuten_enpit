@@ -1,27 +1,40 @@
 	<h2>楽天商品リスト <%= @value %></h2>
-	<table>
-		<tr>
-			<th>
-				ID
-			</th>
-			<th>
-				商品名
-			</th>
-			<th>
-				価格
-			</th>
-		</tr>
-		<tr>
-			<td>
-				123
-			</td>
-			<td>
-				ダミー商品名
-			</td>
-			<td>
-				35,234円
-			</td>
-		</tr>
-	</table>
+
+
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>No.</th>
+      <th>ID</th>
+      <th>商品名</th>
+      <th>価格</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>aaa</td>
+      <td>Otto</td>
+      <td>300円</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>IDが入ります</td>
+      <td>Thornton</td>
+      <td>200円</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>ID2</td>
+      <td>the Bird</td>
+       <td>100円</td>
+   </tr>
+  </tbody>
+</table>
+
+
+
+
+
 
 <%= link_to 'Back', rakutenclips_path %>
