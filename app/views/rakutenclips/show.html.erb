@@ -7,21 +7,28 @@
 
 <p>
   <strong>商品名:</strong>
-  <% search_items('item_code') %>
-  <%= @itemName %>
+  <% dummy_item %>
+  <%= @item[:itemName] %>
 </p>
 
 <p>
   <strong>商品画像</strong>
-  <% search_items('item_code') %>
-  <%= image_tag @imageUrl , :size => '300x200' %>
+  <% dummy_item %>
+  <%= image_tag @item[:imageUrl] , :size => '300x200' %>
 </p>
 
 <p>
   <strong>商品説明:</strong>
-  <% search_items('item_code') %>
-  <%= @itemCaption %>
+  <% dummy_item %>
+  <%= @item[:itemCaption] %>
 </p>
+
+<p>
+  <strong>価格:</strong>
+  <% dummy_item %>
+  <%= @item[:itemPrice] %>
+</p>
+
 
 <p>
   <strong>商品コード:</strong>
