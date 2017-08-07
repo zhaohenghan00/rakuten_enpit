@@ -1,5 +1,6 @@
 class RakutenclipsController < ApplicationController
   before_action :set_rakutenclip, only: [:show, :edit, :update, :destroy]
+  include RakutenclipsHelper
 
   # GET /rakutenclips
   # GET /rakutenclips.json
@@ -10,6 +11,7 @@ class RakutenclipsController < ApplicationController
   # GET /rakutenclips/1
   # GET /rakutenclips/1.json
   def show
+    dummy_item
   end
 
   # GET /rakutenclips/new
