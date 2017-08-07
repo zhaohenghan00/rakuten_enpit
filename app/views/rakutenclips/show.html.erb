@@ -8,19 +8,19 @@
 <p>
   <strong>商品名:</strong>
   <% search_items('item_code') %>
-  <%= @item_name %>
+  <%= @itemName %>
 </p>
 
 <p>
   <strong>商品画像</strong>
   <% search_items('item_code') %>
-  <%= image_tag @picture , :size => '300x200' %>
+  <%= image_tag @imageUrl , :size => '300x200' %>
 </p>
 
 <p>
   <strong>商品説明:</strong>
   <% search_items('item_code') %>
-  <%= @description %>
+  <%= @itemCaption %>
 </p>
 
 <p>
