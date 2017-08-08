@@ -1,40 +1,37 @@
 <p id="notice"><%= notice %></p>
-
-<p>
+<p class="text-right">
   <strong>クリップした日:</strong>
   <%= @rakutenclip.clipdate.strftime('%Y/%m/%d %H:%M:%S') %>
 </p>
 
-<p>
-  <strong>商品名:</strong>
-  <%= @item[:itemName] %>
-</p>
+<ul class="list-group">
+  <li class="list-group-item active">
+    <strong>商品名:</strong>
+    <%= @item[:itemName] %>
+  </li>
+  <li class="list-group-item">
+    <strong>商品画像</strong>
+    <%= image_tag @item[:imageUrl] , :size => '300x200' , :class => 'img-thumbnail' %>
+  </li>
+  <li class="list-group-item">
+    <strong>商品説明:</strong>
+    <%= @item[:itemCaption] %>
+  </li>
+  <li class="list-group-item">
+    <strong>価格:</strong>
+    <%= @item[:itemPrice].to_s(:delimited) %>
+  </li>
+  <li class="list-group-item">
+    <strong>商品コード:</strong>
+    <%= @rakutenclip.itemid %>
+  </li>
+  <li class="list-group-item">
+    <strong>コメント:</strong>
+    <%= @rakutenclip.comment %>
+  </li>
+</ul>
 
-<p>
-  <strong>商品画像</strong>
-  <%= image_tag @item[:imageUrl] , :size => '300x200' %>
-</p>
 
-<p>
-  <strong>商品説明:</strong>
-  <%= @item[:itemCaption] %>
-</p>
-
-<p>
-  <strong>価格:</strong>
-  <%= @item[:itemPrice].to_s(:delimited) %>
-</p>
-
-
-<p>
-  <strong>商品コード:</strong>
-  <%= @rakutenclip.itemid %>
-</p>
-
-<p>
-  <strong>コメント:</strong>
-  <%= @rakutenclip.comment %>
-</p>
 
 <%= link_to 'Edit', edit_rakutenclip_path(@rakutenclip) %> |
 <%= link_to 'Back', rakutenclips_path %>
