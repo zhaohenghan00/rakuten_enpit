@@ -33,9 +33,15 @@ class RakutenclipsController < ApplicationController
 @items.each do |item|
 
   # したい処理
+ puts "-----ここから-----"
   puts item['itemName'] #商品名
   puts item['itemPrice'] #価格
   puts item['itemUrl'] #商品のURL
+  puts item['imageUrl'] #商品画像
+  puts item['itemCaption'] #商品説明
+  puts item['itemPrice'] #価格
+  puts item['itemCode'] #商品コード
+ puts "-----ここまで-----"
 
   end
 
@@ -44,7 +50,6 @@ class RakutenclipsController < ApplicationController
 #   puts "#{item['itemName']}, #{item.price} yen" # You can refer to values as well as Hash.
 # end
 
- puts "test"
 
   end
 
