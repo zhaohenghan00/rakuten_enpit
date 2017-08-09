@@ -50,3 +50,5 @@ end
 
 gem 'rails_12factor', group: :production
 ruby '2.2.5'
+
+gem 'rakuten_web_service'
