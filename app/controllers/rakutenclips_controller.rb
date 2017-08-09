@@ -29,6 +29,22 @@ class RakutenclipsController < ApplicationController
     @value = params['searchVaule']
     end
 
+    @items = RakutenWebService::Ichiba::Item.search(keyword: @value)
+@items.each do |item|
+
+  # したい処理
+  puts item['itemName'] #商品名
+  puts item['itemPrice'] #価格
+  puts item['itemUrl'] #商品のURL
+
+  end
+
+# @items = RakutenWebService::Ichiba::Item.search(:keyword => 'Ruby') # This returns Enumerable object
+# @items.first(10).each do |item|
+#   puts "#{item['itemName']}, #{item.price} yen" # You can refer to values as well as Hash.
+# end
+
+ puts "test"
 
   end
 
@@ -83,4 +99,18 @@ class RakutenclipsController < ApplicationController
     def rakutenclip_params
       params.require(:rakutenclip).permit(:clipdate, :itemid, :comment)
     end
+end
+
+
+def search_rakuten_api(keyword)
+  items = RakutenWebService::Ichiba::Item.search(keyword: keyword)
+  images_arr = []
+  items.each do |item|
+
+  # したい処理
+  puts item['itemName'] #商品名
+  puts item['itemPrice'] #価格
+  puts item['itemUrl'] #商品のURL
+
+  end
 end

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post '/rakutenclips/search_rakuten_api' => 'rakutenclips#search_rakuten_api'
+
   resources :rakutenclips
   resources :data_tests
   resources :data_tests
